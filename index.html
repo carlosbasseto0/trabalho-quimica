@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experimentos de Fermentação</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Experimentos de Fermentação</h1>
+    </header>
+
+    <main>
+        <div class="experiment">
+            <div class="selector-container">
+                <div class="element-container">
+                    <h2>Escolha o primeiro elemento:</h2>
+                    <div class="options">
+                        <button class="element-btn" data-element="glicose">Glicose</button>
+                        <button class="element-btn" data-element="levedura">Levedura</button>
+                        <button class="element-btn" data-element="oxigenio">Oxigênio</button>
+                        <button class="element-btn" data-element="bacteria">Bactéria</button>
+                        <button class="element-btn" data-element="amido">Amido</button>
+                    </div>
+                </div>
+
+                <div class="element-container">
+                    <h2>Escolha o segundo elemento:</h2>
+                    <div class="options">
+                        <button class="element-btn" data-element="glicose">Glicose</button>
+                        <button class="element-btn" data-element="levedura">Levedura</button>
+                        <button class="element-btn" data-element="oxigenio">Oxigênio</button>
+                        <button class="element-btn" data-element="bacteria">Bactéria</button>
+                        <button class="element-btn" data-element="amido">Amido</button>
+                    </div>
+                </div>
+
+                <button class="generate-btn" onclick="gerarReacao()">Gerar Reação</button>
+            </div>
+
+            <div id="explicacao"></div>
+           
+        </div>
+    </main>
+
+   
+</body>
+</html>

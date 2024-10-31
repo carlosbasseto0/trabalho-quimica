@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Processos de Fermentação</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Processos de Fermentação</h1>
+        <div id="content">
+            <div id="definition" class="screen active">
+                <h2>Definição</h2>
+                <p>Fermentação é um processo bioquímico onde microrganismos convertem açúcares em ácidos, gases ou álcool.</p>
+                <button onclick="showMore('def')">Leia mais</button>
+                <p id="moreDef" class="hidden">A fermentação é usada em várias indústrias, como a produção de alimentos e bebidas.</p>
+            </div>
+
+            <div id="substances" class="screen hidden">
+                <h2>Substâncias que geram a Fermentação</h2>
+                <p>Clique para ver as substâncias:</p>
+                <button class="button" onclick="toggleInfo('subInfo')">Ver Substâncias</button>
+                <div id="subInfo" class="hidden">
+                    <ul>
+                        <li>Glicose</li>
+                        <li>Frutose</li>
+                        <li>Sacarose</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="reactions" class="screen hidden">
+                <h2>Reações Envolvidas</h2>
+                <button class="button" onclick="showReaction('aerobic')">Fermentação Aeróbica</button>
+                <button class="button" onclick="showReaction('anaerobic')">Fermentação Anaeróbica</button>
+                <p id="reactionInfo"></p>
+            </div>
+
+            <div id="products" class="screen hidden">
+                <h2>Produtos da Fermentação</h2>
+                <button class="button" onclick="showProducts()">Descubra um Produto</button>
+                <p id="productResult" class="product-display"></p>
+            </div>
+
+            <div id="usage" class="screen hidden">
+                <h2>Uso dos Produtos Obtidos</h2>
+                <button class="button" onclick="startQuiz()">Começar Quiz</button>
+                <div id="quiz" class="hidden">
+                    <p id="quizQuestion"></p>
+                    <button class="button" onclick="checkAnswer('certo')">Alternativa A</button>
+                    <button class="button" onclick="checkAnswer('errado')">Alternativa B</button>
+                    <div id="feedback" class="hidden"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="navigation">
+            <button class="nav-button" onclick="showScreen('definition')">Definição</button>
+            <button class="nav-button" onclick="showScreen('substances')">Substâncias</button>
+            <button class="nav-button" onclick="showScreen('reactions')">Reações</button>
+            <button class="nav-button" onclick="showScreen('products')">Produtos</button>
+            <button class="nav-button" onclick="showScreen('usage')">Uso</button>
+        </div>
+    </div>
+    <script src="scri.js"></script>
+</body>
+</html>
